@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reminders App</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="flex justify-center items-center bg-[#E4E4D0]">
+    <div class="w-[400px] h-screen bg-white rounded-lg shadow-xl">
+      <div class="flex flex-col justify-center items-center">
+        <h1 class="text-4xl font-bold text-gray-800 mt-10 mb-10">
+          Reminders App
+        </h1>
+        <div class="flex flex-col justify-center items-center">
+          <input
+            type="text"
+            class="w-[300px] h-[50px] rounded-lg border-2 border-gray-300 outline-none px-5"
+            placeholder="Enter your reminder"
+            id="reminderInput"
+          />
+          <button
+            class="w-[300px] h-[50px] rounded-lg bg-[#FCA5A5] text-white font-bold mt-5"
+            id="addReminder"
+          >
+            Add Reminder
+          </button>
+        </div>
+        <div class="flex flex-col justify-center items-center mt-10">
+          <h1 class="text-2xl font-bold text-gray-800">Reminders</h1>
+          <div
+            class="w-[300px] h-[300px] rounded-lg border-2 border-gray-300 overflow-y-scroll mt-5"
+          >
+            <ul id="reminderList"></ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
